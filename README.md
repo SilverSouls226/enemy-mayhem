@@ -9,7 +9,7 @@ Enemy Mayhem is a **grid-based, turn-based C++ combat game** where the player mu
 * [Visual Interface](#visual-interface)
 * [Screenshots](#screenshots)
 * [Implementation Overview](#implementation-overview)
-* [Run & Build](#run--build)
+* [Build & Run](#build--run)
 * [Notes](#notes)
 * [License](#license)
 
@@ -67,19 +67,11 @@ Enemy composition changes with progression—early waves favor melee enemies, wh
 
 ---
 ## Screenshots
-*(Placeholders — will be replaced with actual screenshots)*
-```text
-screenshots/
-├── wave_1.png
-├── mid_game.png
-└── shop_screen.png
-```
-Example usage in this section once added:
-```md
-![Wave 1](screenshots/wave_1.png)
-![Shop](screenshots/shop_screen.png)
-```
-Terminal screenshots are fully acceptable.
+Gameplay (Level 8)
+![Gameplay](screenshots/gameplay-battle-grid.png)
+
+Shop (Inbetween each level)
+![Shop](screenshots/shop.png)
 
 ---
 ## Implementation Overview
@@ -98,21 +90,13 @@ Terminal screenshots are fully acceptable.
 * A reusable table-rendering utility is used for terminal UI
 
 ---
-## Run & Build
-### Run (Windows)
-A precompiled **Windows executable** is provided:
-```text
-enemy-mayhem.exe
-```
-Run it by double-clicking the file or from the command line.
-
----
-### Build (Optional)
+## Build & Run
 The current version is **Windows-specific** due to terminal handling
 (e.g. use of `cls` to clear the console).
 To build from source on Windows:
 ```bash
-g++ main.cpp -o enemy_mayhem
+g++ main.cpp -o enemy-mayhem
+enemy-mayhem.exe
 ```
 Linux compatibility is planned, and a `.out` binary will be provided once
 cross-platform terminal handling is implemented.
