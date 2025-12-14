@@ -1,0 +1,8 @@
+# Build outputs
+*.exe
+*.out
+
+# Temporary / OS files
+*.log
+.DS_Store
+Thumbs.db
